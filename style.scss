@@ -102,7 +102,10 @@ p {
     display: none;
   }
 }
+.accordian p.active {
+  display: block;
+}
 
-.active {
-  font-weight: 700;
+.active-question img {
+  transform: rotate(180deg);
 }
