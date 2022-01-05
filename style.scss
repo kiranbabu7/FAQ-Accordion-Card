@@ -91,6 +91,7 @@ p {
 
     h3 {
       font-weight: 400;
+      color: hsl(237, 12%, 33%);
     }
   }
 
@@ -100,12 +101,21 @@ p {
   }
   p {
     display: none;
+    padding: 1rem 0;
+    color: hsl(240, 6%, 50%);
   }
 }
 .accordian p.active {
   display: block;
 }
 
-.active-question img {
-  transform: rotate(180deg);
+.accordian .active-question {
+  img {
+    transform: rotate(180deg);
+    transition: 0.5s;
+  }
+  h3 {
+    font-weight: 700;
+    color: black;
+  }
 }

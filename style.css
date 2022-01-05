@@ -114,6 +114,7 @@ p {
 
 .accordian .questions h3 {
   font-weight: 400;
+  color: #4a4b5e;
 }
 
 .accordian .questions:hover {
@@ -123,14 +124,23 @@ p {
 
 .accordian p {
   display: none;
+  padding: 1rem 0;
+  color: #787887;
 }
 
 .accordian p.active {
   display: block;
 }
 
-.active-question img {
+.accordian .active-question img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.accordian .active-question h3 {
+  font-weight: 700;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
