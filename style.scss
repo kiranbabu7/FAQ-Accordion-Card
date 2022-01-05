@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+$Text-Highlisght: hsl(14, 88%, 65%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+p {
+  font-size: 1.3rem;
+}
+.hero {
+  background: linear-gradient(
+    0deg,
+    rgb(83, 110, 231) 0%,
+    rgb(180, 102, 243) 100%
+  );
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  height: 70vh;
+  width: 70vw;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+.img-container {
+  position: relative;
+  flex: 1 1 40rem;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .img-bg {
+    height: 80rem;
+    width: 80rem;
+    position: absolute;
+    bottom: -20%;
+    left: -90%;
+  }
+  .woman-img {
+    height: 32rem;
+    width: 45rem;
+    position: absolute;
+    bottom: 22%;
+    left: -17%;
+    z-index: 1;
+  }
+}
+.box-img {
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  top: 40%;
+  left: 9.7%;
+  z-index: 2;
+}
+.faq {
+  flex: 1 1 40rem;
+  padding: 5rem 0;
+
+  h1 {
+    padding-bottom: 2rem;
+  }
+}
+.accordian {
+  width: 80%;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding: 1.5rem 0;
+
+  .questions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      font-weight: 400;
+    }
+  }
+
+  .questions:hover {
+    color: $Text-Highlisght;
+    cursor: pointer;
+  }
+  p {
+    display: none;
+  }
+}
+
+.active {
+  font-weight: 700;
+}
