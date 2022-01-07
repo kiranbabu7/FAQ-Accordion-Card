@@ -1,7 +1,9 @@
 const accordians = document.getElementsByClassName("accordian");
 
 function showAnswer() {
-  hideAnswer();
+  if (!this.children[0].classList.contains("active-question")) {
+    hideAnswer();
+  }
   this.children[0].classList.toggle("active-question");
   this.children[1].classList.toggle("active");
 }

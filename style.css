@@ -36,11 +36,15 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: white;
   height: 70vh;
   width: 70vw;
   border-radius: 20px;
   font-size: 1.5rem;
+  -webkit-box-shadow: 0px 18px 18px 0px #00000054;
+          box-shadow: 0px 18px 18px 0px #00000054;
 }
 
 .img-container {
@@ -48,6 +52,7 @@ p {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -115,6 +120,7 @@ p {
 .accordian .questions h3 {
   font-weight: 400;
   color: #4a4b5e;
+  pointer-events: none;
 }
 
 .accordian .questions:hover {
@@ -142,5 +148,50 @@ p {
 .accordian .active-question h3 {
   font-weight: 700;
   color: black;
+}
+
+@media screen and (max-width: 1150px) {
+  .hero {
+    height: 150vh;
+    overflow: hidden;
+  }
+  .container {
+    display: block;
+    height: 100vh;
+    width: 90%;
+    margin-top: 10rem;
+    position: relative;
+  }
+  .img-container {
+    position: absolute;
+    height: 25rem;
+    width: 30rem;
+    overflow: visible;
+    top: 5%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .img-container .img-bg {
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    top: -28%;
+    left: -17%;
+  }
+  .img-container .woman-img {
+    height: 100%;
+    width: 100%;
+  }
+  .faq {
+    margin-top: 10rem;
+    text-align: center;
+    margin-top: 12rem;
+  }
+  .accordian {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */
