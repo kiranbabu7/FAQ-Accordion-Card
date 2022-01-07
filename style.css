@@ -183,6 +183,12 @@ p {
     height: 100%;
     width: 100%;
   }
+  .box-img {
+    height: 10rem;
+    width: 10rem;
+    top: -5%;
+    left: 27.5%;
+  }
   .faq {
     margin-top: 10rem;
     text-align: center;
